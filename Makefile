@@ -1,2 +1,2 @@
 pdf:
-	pdflatex CV.tex
+	pdflatex CV/CV.tex
