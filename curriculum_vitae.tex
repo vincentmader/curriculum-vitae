@@ -1,26 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-
-\usepackage{graphicx}
-\usepackage[utf8]{inputenc}  % Character encoding
-\usepackage[scale=0.8]{geometry}  % Adjust the page margins
-
-%% ModernCV themes
-\moderncvstyle{casual}
-\moderncvcolor{green}
-\nopagenumbers{}
-\renewcommand{\familydefault}{\sfdefault}
-
-%% Personal data
-\firstname{Vincent C.}
-\familyname{Mader}
-\title{Curriculum Vitae} 
-\address{Rohrbacher Straße 75}{69115 Heidelberg} 
-\email{vincent.mader@icloud.com} 
-\phone{+49~162~722~6587} 
-\homepage{mader.xyz} 
-\homepage{https://github.com/vincentmader} 
-% \photo[64pt][0.4pt]{./picture.jpg}
-% \photo[64pt]{./picture.jpg}
+\documentclass{curriculum_vitae}
 
 \begin{document}
 % \photo[64pt][0.4pt]{picture} 
@@ -30,8 +8,8 @@
     
     \section{Personal Details}
         \cvitem{Name}{Mader, Vincent Christian}
-        \cvitem{Date of Birth}{July 11th, 1998}
         \cvitem{City of Birth}{Ulm-Söflingen, Germany}
+        \cvitem{Date of Birth}{July 11th, 1998}
         \cvitem{Nationality}{German}
     % \section{Pers\"onliche Daten}
     %     \cvitem{Name}{Mader, Vincent Christian}
@@ -40,11 +18,12 @@
     %     \cvitem{Nationalit\"at}{Deutsch}
     
     \section{Education}
-        % arguments 3 to 6 can be left empty
-        \cventry{2004--2008}{J\"org-Syrlin-Grundschule}{}{Ulm}{}{}
-        \cventry{2008--2016}{Hans-und-Sophie-Scholl-Gymnasium}{}{Ulm}{}{} 
-        \cventry{2016--2020}{Ruprecht-Karls-Universit\"at}{Physics B.Sc.}{Heidelberg}{}{}
-        \cventry{since 2020}{Ruprecht-Karls-Universit\"at}{Physics M.Sc.}{Heidelberg}{}{} 
+        % \cventry{2004--2008}{J\"org-Syrlin-Grundschule}{}{Ulm}{}{}
+        \cventry{2008 -- 2016}{Hans-und-Sophie-Scholl-Gymnasium}{Abitur}{Ulm}{}{} 
+        \cventry{2016 -- 2020}{Ruprecht Karl University of Heidelberg}{Bachelor of
+        Science in Physics}{Heidelberg}{}{}
+        \cventry{2020 -- 2024}{Ruprecht Karl University of Heidelberg}{Master of
+        Science in Physics}{Heidelberg}{}{} 
     % \section{Ausbildung}
         % \cventry{2004--2008}{J\"org-Syrlin-Grundschule}{}{Ulm}{}{}
         % \cventry{2008--2016}{Hans-und-Sophie-Scholl-Gymnasium}{}{Ulm}{}{} 
@@ -52,10 +31,16 @@
         % \cventry{seit 2020}{Ruprecht-Karls-Universit\"at}{Master-Studiengang im Fach Physik}{Heidelberg}{}{} 
    
     \section{Experience}
-        \cventry{since 2015}{Physics \& Mathematics Tutor for High School Students}{}{}{}{}
-        \cventry{2019}{Project Internship: Simulation of Accreting Planets}{MPIA Heidelberg}{}{}{}
-        \cventry{2019-2023}{Academic Tutor for Physics Experiments}{Heidelberg University}{}{}{}
-        \cventry{2022-2023}{Project Internship: Numerical Integration of Smoluchowski Coagulation Equation}{Heidelberg Institute for Theoretical Astrophysics}{}{}{}
+        \cventry{since 2015}{Physics \& Mathematics Tutor for High School
+        Students}{}{}{}{}
+        \cventry{2019}{Project Internship: Simulation of Accreting Planets}{Max Planck Institute for
+        Astronomy}{Heidelberg}{}{}
+        \cventry{Apr 2020 -- Jul 2020}{Academic Tutor for Physics Experiments}{Ruprecht Karl University of Heidelberg}{Heidelberg}{}{}
+        \cventry{Feb 2021 -- Mar 2021}{Academic Tutor for Physics Experiments}{Ruprecht Karl University of Heidelberg}{Heidelberg}{}{}
+        \cventry{Oct 2022 -- Jan 2023}{Academic Tutor for Physics Experiments}{Ruprecht Karl University of Heidelberg}{Heidelberg}{}{}
+        \cventry{2022 -- 2023}{Project Internship: Utilizing Monte Carlo Sampling for the Numerical Integration of the Smoluchowski Coagulation Equation}{Institute for Theoretical Astrophysics}{Heidelberg}{}{}
+        \cventry{2022 -- 2024}{Part-Time Staff in the Gastronomy Sector}{gastroevents GmbH \& Co.
+        KG}{Ulm}{}{}
 
     % \section{Sprachkenntnisse}
     %     \cvitemwithcomment{Deutsch}{Muttersprache}{}
@@ -64,16 +49,27 @@
     %     \cvitemwithcomment{Italienisch}{? Grundkenntnisse}{}
     %     \cvitemwithcomment{Latein}{kleines Latinum}{}
         % intermediate Latin certificate
-    \section{Language Skills}
-        \cvitemwithcomment{German}{native language}{}
-        \cvitemwithcomment{English}{full working proficiency}{}
-        \cvitemwithcomment{French}{limited working proficiency}{}
-        \cvitemwithcomment{Italian}{elementary proficiency}{}
-        % \cvitemwithcomment{Latein}{Latinum}{}
+    \section{Languages}
+        \cvitemwithcomment{German}{Native Language}{}
+        \cvitemwithcomment{English}{Full Working Proficiency (Bilingual Education at High School)}{}
+        \cvitemwithcomment{Italian}{Elementary Proficiency (A2 Certificate)}{}
+        \cvitemwithcomment{French}{Elementary Proficiency}{}
+        \cvitemwithcomment{Latin}{Latinum}{}
     
-    \section{Software Skills}
-        \cvitemwithcomment{Languages}{Python, Rust, JavaScript, Dart (Flutter), HTML, CSS, LaTeX, sh/bash}{} 
-        \cvitemwithcomment{Tools}{Git, Docker, SSH, Vim, Emacs, Linux/UNIX}{} 
+    \section{Skills}
+        \cvitem{General}{%
+            Physics, Mathematics, Computational Physics, 
+            Numerical Simulation, Data Analysis, Data Visualization,
+            Software Development, Web Development, App Development
+        }{}
+        % \cvitemwithcomment{Software}{Web/App Development, Computational Physics}{}{}
+        \cvitem{Computer Languages}{% 
+            Python, Rust, JavaScript, Shell Scripting, Swift, Dart, HTML, CSS, LaTeX, 
+            (\& a little bit of C and Java)
+        }{}
+        \cvitemwithcomment{Software Tools}{%
+            Linux/UNIX, Git, Docker, SSH, Vim, Emacs}{} 
+        \cvitem{Social}{Team Coordination, Team Leadership, Tutoring, Children}{}
         % \cvitemwithcomment{basic}{C/C++, slurm}{}
         % \cvitemwithcomment{python}{advanced (numpy, matplotlib, scipy, torch, ...)}{}
         % \cvitemwithcomment{UNIX shell}{advanced}{}
@@ -88,11 +84,14 @@
         %\cvitemwithcomment{Java}{Grundkenntnisse}{}
         
     \section{Volunteering}
-        \cvitemwithcomment{2014--2015}{children's supervisor at Ruhetal Ulm summer camp}{}{}{}{}
-        % \cvitemwithcomment{2015}{internship at Sonnenheim Ulm kindergarden}{}{}{}{}
-        \cvitemwithcomment{2022--2023}{cash auditor at DPSG Ostalb district}{}{}{}{}
-        \cvitemwithcomment{2019--present}{scout group leader at DPSG Ulm-Söflingen}{}{}{}{}
-        \cvitemwithcomment{2022--present}{chair of association at DPSG Ulm-Söflingen}{}{}{}{}
+        \cventry{2013 -- 2015}{Children's Supervisor}{Ruhetal Ulm (two-week summer camp)}{Ulm}{}{}
+        \cventry{2022 -- 2023}{Cash Auditor (Kassenprüfer)}{DPSG Bezirk Ostalb}{}{}{}
+        \cventry{2022 -- 2023}{Scout Group Leader (Gruppenleiter)}{DPSG Heidelberg-Kirchheim}{Heidelberg}{}{}
+        % \cventry{2015}{internship at Sonnenheim Ulm kindergarden}{}{}{}{}
+        \cventry{2019 -- present}{Scout Group Leader (Gruppenleiter)}{DPSG Ulm-Söflingen}{Ulm}{}{}
+        \cventry{2022 -- present}{Chair of Association (Vereinsvorsitzender)}{DPSG
+        Ulm-Söflingen}{Ulm}{}{}
+        \cventry{2024 -- present}{Election Committee Member (Wahlausschuss)}{DPSG Bezirk Ostalb}{}{}{}
         %\cvlistitem{Item 1}
         %\cvlistdoubleitem{Item 2}{Item 3}
 
